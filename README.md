@@ -1,12 +1,14 @@
 # Intercom Take Home Task
 
-# Requirements
+> **_NOTE:_**  Steps provided were tested inside a Docker Container, using the image `ubuntu:latest` and then installing the requirements.
+
+## Requirements
 - Any C++ 11 compiler.
-- CMake with minimum version 3.20.0.
+- CMake with minimum version 3.16.3.
 - Internet in order to run the bash commands.
 - Git installed.
 
-# Run code
+## Run code
 - Use a bash terminal.
 - Clone the repo.
 ```console
