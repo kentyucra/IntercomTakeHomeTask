@@ -1,5 +1,9 @@
 #include "../Customer.hpp"
 #include <gtest/gtest.h>
+#include <math.h>
+#include <stdio.h>
+
+#define epsilon 0.00000000001f
 
 TEST(CustomerModule, Distance) {
     //NOTE: Puno and Juliaca are places where I am from in Peru.
@@ -10,8 +14,12 @@ TEST(CustomerModule, Distance) {
 
     //reference from https://www.onlineconversion.com/map_greatcircle_distance.htm
     long double distanceFromReference = 39.58184734554036;
-
-    ASSERT_DOUBLE_EQ(distanceFromReference, distanceFromJuliacaToPuno);
+   
+    if (fabs(distanceFromReference - distanceFromJuliacaToPuno) < epsilon) { 
+	 ASSERT_TRUE(true);
+    } else {
+	 ASSERT_TRUE(false);
+    }
 }
 
 TEST(CustomerModule, SymmetryDistance) {

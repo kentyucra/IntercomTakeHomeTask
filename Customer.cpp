@@ -1,4 +1,6 @@
 #include "Customer.hpp"
+#include <math.h>
+#include <stdio.h>
 
 Customer::Customer(int tUserId, double tLatitude, double tLongitude, string tName): 
         userId(tUserId), latitude(tLatitude), longitude(tLongitude), name(tName) {}

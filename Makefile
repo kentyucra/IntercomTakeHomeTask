@@ -18,6 +18,6 @@ test:
 	./${BUILD_DIR}/test/IntercomTests
 
 run:
-	./${BUILD_DIR}/main
+	./${BUILD_DIR}/Main
 
 .PHONY: configure init build test run
