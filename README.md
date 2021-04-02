@@ -4,6 +4,7 @@
 - Any C++ 11 compiler.
 - CMake with minimum version 3.20.0.
 - Internet in order to run the bash commands.
+- Git installed.
 
 # Run code
 - Use a bash terminal.
